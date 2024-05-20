@@ -1,22 +1,57 @@
 header{background-color: black;display: flex;width:100%;
     border-radius: 5px;
-    align-items: center;justify-content:space-between;position:fixed;
+    align-items: center;justify-content:space-between;position:fixed;padding: 10px;
 }
-
+header img {height: 35px;}
 .logo{color: rgb(255, 255, 255);text-decoration: none;
     font-size:1.8em;font-weight: 700;padding-right: 600px;}
     .nave a{color: white;text-decoration: none;font-size: 1.1em;
         font-weight: 500;padding-left: 100px;}
+.logo::first-letter{color: #ff5100; font-size: xx-large;
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 1.5em;
+            }
+            
+            .nav a {
+                font-size: 1em;
+                margin-left: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .logo-img {
+                margin-bottom: 10px;
+            }
+            
+            .logo {
+                font-size: 1.2em;
+            }
+            
+            .nav {
+                width: 100%;
+            }
+            
+            .nav a {
+                display: block;
+                font-size: 1em;
+                margin: 5px 0;
+            }
+        }
+        
         img{margin: 10px;}
+
         .grid{display: grid;grid-template-columns:8fr 4fr;grid-template-rows:100px 250px 60px 200px 50px 40px 100px;
             background-color: rgb(32, 30, 30);}
-
             .grid img{height: 625px;width: 600px;border-radius: 20px;grid-area: 2/2/4/-1;margin-right:35px;}
-
-
             .grid h1{color: rgb(255, 255, 255);grid-column-start: 1;grid-row: 2/3;margin:20px;
             font-family: 'Times New Roman', Times, serif;}
-
             .grid h1 hr{
                 border: solid #fd810d 2px;}
 .grid h2{grid-row:3;grid-column: 1; color: rgba(228, 93, 25, 0.915);margin-left: 250px;font-size: 40px;}
@@ -25,9 +60,68 @@ header{background-color: black;display: flex;width:100%;
        .grid a{grid-row:5;grid-column:1 ;height: 30px;width:80px;
          background-color: #fd810d;margin-left: 110px;border-radius: 20px;text-align: center;}        
 
-.logo::first-letter{color: #ff5100; font-size: xx-large;
-                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
                     .grid div{grid-row: 6;grid-column: 1;background-color:#eb820a;border-radius: 10px;}
+                    @media (max-width: 1200px) {
+                        .grid {
+                            grid-template-columns: 1fr;
+                        }
+                    
+                        .grid img {
+                            grid-column: 1 / 2;
+                            grid-row: 1 / 2;
+                            margin-right: 0;
+                        }
+                    
+                        .grid h1, .grid h2, .grid h3 {
+                            grid-column: 1 / 2;
+                            margin-left: 0;
+                            text-align: center;
+                        }
+                    
+                        .grid a {
+                            margin: 10px auto;
+                        }
+                    
+                        .grid div {
+                            grid-column: 1 / 2;
+                            justify-content: center;
+                        }
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .grid h2 {
+                            font-size: 30px;
+                        }
+                    
+                        .grid h3 {
+                            font-size: 18px;
+                        }
+                    }
+                    
+                    @media (max-width: 480px) {
+                        .grid h1 {
+                            font-size: 24px;
+                        }
+                    
+                        .grid h2 {
+                            font-size: 24px;
+                            margin-left: 0;
+                        }
+                    
+                        .grid h3 {
+                            font-size: 16px;
+                            margin-left: 0;
+                        }
+                    
+                        .grid a {
+                            font-size: 16px;
+                            padding: 5px;
+                        }
+                    
+                        .grid div {
+                            flex-direction: column;
+                        }
+                    }
 
               
                     .skills{grid-template-columns: 100px 100px 100px 100px;grid-template-rows: 100px 100px 100px 100px;
@@ -46,3 +140,5 @@ header{background-color: black;display: flex;width:100%;
                             border-radius: 10px;}
                             
                             .container-fluid{background-color:rgb(32, 30, 30) ;}
+                            
+                           
