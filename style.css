@@ -8,8 +8,8 @@ header{background-color: black;display: flex;width:100%;
     .nave a{color: white;text-decoration: none;font-size: 1.1em;
         font-weight: 500;padding-left: 100px;}
         img{margin: 10px;}
-        .grid{display: grid;grid-template-columns:8fr 4fr;grid-template-rows:100px 250px 60px 200px 50px 40px 100px 200px 200px 200px 200px 200px;
-            background-color: rgb(32, 30, 30);border-radius: 10px;}
+        .grid{display: grid;grid-template-columns:8fr 4fr;grid-template-rows:100px 250px 60px 200px 50px 40px 100px;
+            background-color: rgb(32, 30, 30);}
 
             .grid img{height: 625px;width: 600px;border-radius: 20px;grid-area: 2/2/4/-1;margin-right:35px;}
 
@@ -29,5 +29,20 @@ header{background-color: black;display: flex;width:100%;
                     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
                     .grid div{grid-row: 6;grid-column: 1;background-color:#eb820a;border-radius: 10px;}
 
-              .grid div h4{color: #fd810d;grid-row-start: 9;grid-column-start:2;}
-                    
+              
+                    .skills{grid-template-columns: 100px 100px 100px 100px;grid-template-rows: 100px 100px 100px 100px;
+                        background-color:rgb(32, 30, 30); border-radius: 10px;}
+                    .skills h4{grid-column:3/-1;grid-row: 1;;color: rgb(255, 132, 0);margin-left: 700px;}
+                    .test{display: flex;justify-content: space-around;}
+                    .contenar{background-color:rgb(32, 30, 30);}
+                    .contenar h1{text-align: center;color: #fd650d;border-top: solid 1px rgb(222, 69, 13);}
+                    .card-body{background-color: rgb(189, 196, 196);}
+                    .hd{color: white;}
+                    .tran{height: 300px;width:600px;background-image:
+                        url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcJuQ2ii_mBoCA2ac_nUY3g7JYexcqW7v3O77qv60QMw&s);
+                        margin-left: 450px;border-radius: 10px;}
+                        .tran:hover{background-image: 
+                            url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfjhR-Wixt-Sj5B1-VmS4nBah2a-n_laCQjA&s);
+                            border-radius: 10px;}
+                            
+                            .container-fluid{background-color:rgb(32, 30, 30) ;}
